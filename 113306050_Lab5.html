@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>demo</title>
+	<link rel="styleSheet" href="113306050_Lab5.css">
+</head>
+<body>
+	<div class="container">
+		<form id="grades-form">
+			<input type="number" value="Math" id="math-grade" placeholder="Math" required>
+            <input type="number" name="English" id="english-grade" placeholder="English" required>
+            <button type="submit">submit</button>
+		</form>
+
+		<table id="grades-table">
+            <thead>
+                <tr>
+                	<th>#</th>
+                    <th>Math</th>
+                    <th>English</th>
+                    <th>Average</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <td>Average：</td>
+                    <td id="math-avg"></td>
+                    <td id="english-avg"></td>
+                    <td id="overall-avg"></td>
+                </tr>
+            </tfoot>
+        </table>
+	</div>
+
+	<script src="113306050_Lab5.js"></script>
+</body>
+</html>
