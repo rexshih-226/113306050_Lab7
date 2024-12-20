@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>demo</title>
+	<link rel="styleSheet" href="113306050_Lab7.css">
+</head>
+<body>
+	<div class="container">
+		<form id="grades-form">
+			<input type="number" value="Math" id="math-grade" placeholder="Math" required> <!-- 數學成績的輸入框，只能輸入數字 -->
+            <input type="number" name="English" id="english-grade" placeholder="English" required> <!-- 英文成績的輸入框，只能輸入數字 -->
+            <button type="submit">submit</button>
+		</form>
+
+		<table id="grades-table">
+            <thead>
+                <tr>
+                	<th>#</th>
+                    <th>Math</th> <!-- 數學成績欄位 -->
+                    <th>English</th> <!-- 英文成績欄位 -->
+                    <th>Average</th> <!-- 單科平均分欄位 -->
+                </tr>
+            </thead>
+            <tbody></tbody> <!-- 表格的內容區域，動態填充數據 -->
+            <tfoot>
+                <tr>
+                    <td>Average：</td> <!-- 顯示全體平均分的文字 -->
+                    <td id="math-avg"></td> <!-- 顯示數學科目平均分數 -->
+                    <td id="english-avg"></td> <!-- 顯示英文科目平均分數 -->
+                    <td id="overall-avg"></td> <!-- 顯示總體平均分數 -->
+                </tr>
+            </tfoot>
+        </table>
+	</div>
+
+	<script src="113306050_Lab7.js"></script>
+</body>
+</html>
